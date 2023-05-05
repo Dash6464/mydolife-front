@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Nunito;
+  src: url("Fonts/Nunito-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "Nunito";
+}
+.p-carousel-container  {
+  color: white;
+}
