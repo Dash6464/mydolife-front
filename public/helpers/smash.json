@@ -1,0 +1,57 @@
+{
+  "smash64": [
+    {
+      "nombre": "Mario",
+      "arquetipo1": "Shoto"
+    },
+    {
+      "nombre": "DK",
+      "arquetipo1": "Gorila"
+    },
+    {
+      "nombre": "Link",
+      "arquetipo1": "Shoto",
+      "arquetipo2": "Zonero"
+    },
+    {
+      "nombre": "Samus",
+      "arquetipo1": "Zonero"
+    },
+    {
+      "nombre": "Yoshi",
+      "arquetipo1": "All rounded",
+      "arquetipo2": "Rushdown"
+    },
+    {
+      "nombre": "Kirby",
+      "arquetipo1": "Gorila"
+    },
+    {
+      "nombre": "Fox",
+      "arquetipo1": "Rushdown"
+    },
+    {
+      "nombre": "Pikachu",
+      "arquetipo1": "Shoto",
+      "arquetipo2": "Rushdown"
+    },
+    {
+      "nombre": "Luigi",
+      "arquetipo1": "Shoto",
+      "arquetipo2": "Gorila"
+    },
+    {
+      "nombre": "Capitan Falcon",
+      "arquetipo1": "Rushdown"
+    },
+    {
+      "nombre": "Ness",
+      "arquetipo1": "All rounded",
+      "arquetipo2": "Gorila"
+    },
+    {
+      "nombre": "Jiglipuff",
+      "arquetipo1": "Broma"
+    }
+  ]
+}

@@ -6,6 +6,7 @@
 body {
   font-family: "Nunito";
 }
-.p-carousel-container  {
-  color: white;
+.p-carousel .p-carousel-content .p-carousel-prev,
+.p-carousel .p-carousel-content  {
+  color: #2F4944;
 }
