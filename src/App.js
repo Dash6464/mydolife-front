@@ -11,45 +11,56 @@ import Title from './componets/Title';
 import Icon from './componets/Icon';
 import Aboutus from './componets/Aboutus';
 import Content from './componets/Content';
+import Mountain from './componets/Mountain';
 import Mainteam from './componets/Mainteam';
 import Contact from './componets/Contact';
+import { BrowserRouter } from 'react-router-dom';
+import { Element, scroller } from 'react-scroll';
 
 function App() {
+  const handleEnlanceClick = (target) => {
+    scroller.scrollTo(target, {
+      duration: 1,
+      smooth: true
+    });
+  };
+
   return (
-    <div className="App">
-      <div style={{ position: 'sticky', top: 0, zIndex: 11 }} id="inicio">
-        <Navbar />
+    <BrowserRouter>
+      <div className="App">
+        <Element name="#inicio"></Element>
+        <Navbar handleEnlanceClick={handleEnlanceClick} />
+        <div id="title">
+          <Title />
+        </div>
+        <Icon />
+        <Element
+          className="container d-flex flex justify-content-center"
+          style={{
+            marginTop: 60,
+            marginBottom: 180
+          }}
+          name="#nosotros"
+        >
+          <Aboutus />
+        </Element>
+        <div
+          className="container d-flex flex justify-content-center"
+          style={{
+            marginTop: 60
+          }}
+        >
+          <Content />
+        </div>
+        <Element name="#equipo">
+          <Mountain />
+          <Mainteam />
+        </Element>
+        <Element name="#contacto">
+          <Contact />
+        </Element>
       </div>
-      <div id="title" style={{ zIndex: 10 }}>
-        <Title />
-      </div>
-      <Icon />
-      <div
-        className="container d-flex flex justify-content-center"
-        style={{
-          marginTop: 60,
-          marginBottom: 180
-        }}
-        id="nosotros"
-      >
-        <Aboutus />
-      </div>
-      <div
-        className="container d-flex flex justify-content-center"
-        style={{
-          marginTop: 60,
-          marginBottom: 180
-        }}
-      >
-        <Content />
-      </div>
-      <div id="equipo">
-        <Mainteam />
-      </div>
-      <div id="contacto">
-        <Contact />
-      </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

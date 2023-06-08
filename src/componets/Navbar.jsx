@@ -1,9 +1,14 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { handleEnlanceClick } = props;
+
+  const location = useLocation();
+
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg">
+    <div style={{ position: 'sticky', top: 0, zIndex: 13 }}>
+      <nav className="navbar navbar-expand-lg" style={{backgroundColor: "white"}}>
         <div className="container-lg">
           <button
             className="navbar-toggler mb-4 mt-3 border border-0"
@@ -17,7 +22,6 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-
           <div
             className="collapse navbar-collapse mt-1"
             id="navbarSupportedContent"
@@ -25,45 +29,62 @@ const Navbar = () => {
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item" style={{ marginRight: 25 }}>
-                <a className="btn btn-success" aria-current="page" href='#inicio'>
+                <Link
+                  to="/#inicio"
+                  id="nav-link1"
+                  className={location.hash === "" || location.hash === "#inicio" ? "active" : "link"}
+                  onClick={() => {
+                    handleEnlanceClick('#inicio');
+                  }}
+                >
                   Inicio
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#nosotros"
-                  style={{ color: '#2F4944', fontSize: 24 }}
+                <Link
+                  to="/#nosotros"
+                  id="nav-link2"
+                  className={location.hash === "#nosotros" ? "active" : "link"}
+                  onClick={() => {
+                    handleEnlanceClick('#nosotros');
+                  }}
                 >
                   Nosotros
-                </a>
+                </Link>
               </li>
             </ul>
 
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#equipo"
-                  style={{ marginRight: 30, color: '#2F4944', fontSize: 24 }}
+                <Link
+                  to="/#equipo"
+                  id="nav-link3"
+                  className={location.hash === "#equipo" ? "active" : "link"}
+                  style={{ marginRight: 30 }}
+                  onClick={() => {
+                    handleEnlanceClick('#equipo');
+                  }}
                 >
                   Equipo
-                </a>
+                </Link>
               </li>
 
               <li className="nav-item">
-                <a
-                  className="nav-link"
-                  href="#contacto"
-                  style={{ color: '#2F4944', fontSize: 24 }}
+                <Link
+                  to="/#contacto"
+                  id="nav-link4"
+                  className={location.hash === "#contacto" ? "active" : "link"}
+                  onClick={() => {
+                    handleEnlanceClick('#contacto');
+                  }}
                 >
                   Contacto
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
-          <div id='title2'>
+          <div id="title2">
             <img src="./images/logo.png" alt="Mydolife" id="logo" />
           </div>
         </div>

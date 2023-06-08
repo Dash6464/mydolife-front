@@ -21,7 +21,7 @@ const Contact = () => {
 
   return (
     <div style={{ backgroundColor: '#6ACC53' }}>
-      <div
+      {/* <div
         style={{
           width: '100%',
           height: 265,
@@ -29,14 +29,14 @@ const Contact = () => {
           borderRadius: '50%',
           marginBottom: -130
         }}
-      ></div>
+      ></div> */}
       <div
         style={{
           backgroundColor: '#9BB7EE'
         }}
         className="d-flex flex-column align-items-center justify-content-center "
       >
-        <h1 className="text-white">Envianos un mensaje</h1>
+        <h1 className="text-white mb-5" style={{marginTop: 150}}>Envianos un mensaje</h1>
         <div
           className="bg-white px-5 py-4"
           style={{ borderRadius: 30, marginTop: 15 }}

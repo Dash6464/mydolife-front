@@ -9,6 +9,7 @@ import { Avatar } from 'primereact/avatar';
 
 const Mainteam = () => {
   const [members, setMembers] = useState([]);
+
   const responsiveOptions = [
     {
       breakpoint: '1081px',
@@ -23,9 +24,9 @@ const Mainteam = () => {
   ];
 
   const getMembers = () => {
-    fetch("./helpers/smash.json")
-    .then(response => response.json())
-    .then(datos => setMembers(datos.smash64))
+    fetch('./helpers/smash.json')
+      .then((response) => response.json())
+      .then((datos) => setMembers(datos.smash64));
   };
 
   useEffect(() => {
@@ -56,14 +57,6 @@ const Mainteam = () => {
 
   return (
     <div className="card">
-      <div>
-        <img src="images/Colina/image 1.png" alt="Colinas" id='colina1'/>
-        <img src='images/Colina/image 2.png' alt='Colinas' id='colina2'/>
-        <img src="images/Colina/image 3.png" alt="Colinas" id='colina3'/>
-        <img src="images/Colina/image 4.png" alt="Colinas" id='colina4'/>
-        <img src="images/Colina/image 5.png" alt="Colinas" id='colina5'/>
-        <img src="images/Colina/image 6.png" alt="Colinas" id='colina6'/>
-      </div>
       <Carousel
         value={members}
         numVisible={3}
