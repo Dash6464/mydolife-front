@@ -8,7 +8,7 @@ const Navbar = (props) => {
 
   return (
     <div style={{ position: 'sticky', top: 0, zIndex: 13 }}>
-      <nav className="navbar navbar-expand-lg" style={{backgroundColor: "white"}}>
+      <nav className="navbar navbar-expand-lg" style={{backgroundColor: "white", paddingTop: 0, paddingBottom: 0}}>
         <div className="container-lg">
           <button
             className="navbar-toggler mb-4 mt-3 border border-0"
@@ -23,11 +23,11 @@ const Navbar = (props) => {
           </button>
 
           <div
-            className="collapse navbar-collapse mt-1 mb-5 mb-sm-5 mb-md-0"
+            className="collapse navbar-collapse mt-1 mt-sm-1 mt-md-0 mb-5 mb-sm-5 mb-md-0"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item mb-3 mb-sm-3" style={{ marginRight: 30 }}>
+            <ul className="navbar-nav me-auto">
+              <li className="nav-item mb-3 mb-sm-3 mb-md-0" style={{ marginRight: 30 }}>
                 <Link
                   to="/#inicio"
                   id="nav-link1"
@@ -39,7 +39,7 @@ const Navbar = (props) => {
                   Inicio
                 </Link>
               </li>
-              <li className="nav-item mb-3 mb-sm-3">
+              <li className="nav-item mb-3 mb-sm-3 mb-md-0">
                 <Link
                   to="/#nosotros"
                   id="nav-link2"
@@ -53,8 +53,8 @@ const Navbar = (props) => {
               </li>
             </ul>
 
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item mb-3 mb-sm-3">
+            <ul className="navbar-nav ms-auto">
+              <li className="nav-item mb-3 mb-sm-3 mb-md-0">
                 <Link
                   to="/#equipo"
                   id="nav-link3"
@@ -68,7 +68,7 @@ const Navbar = (props) => {
                 </Link>
               </li>
 
-              <li className="nav-item mb-3 mb-sm-3">
+              <li className="nav-item mb-3 mb-sm-3 mb-md-0">
                 <Link
                   to="/#contacto"
                   id="nav-link4"
