@@ -23,12 +23,11 @@ const Navbar = (props) => {
           </button>
 
           <div
-            className="collapse navbar-collapse mt-1"
+            className="collapse navbar-collapse mt-1 mb-5 mb-sm-5 mb-md-0"
             id="navbarSupportedContent"
-            style={{ marginBottom: 70}}
           >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item" style={{ marginRight: 25 }}>
+              <li className="nav-item mb-3 mb-sm-3" style={{ marginRight: 30 }}>
                 <Link
                   to="/#inicio"
                   id="nav-link1"
@@ -40,7 +39,7 @@ const Navbar = (props) => {
                   Inicio
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mb-3 mb-sm-3">
                 <Link
                   to="/#nosotros"
                   id="nav-link2"
@@ -55,7 +54,7 @@ const Navbar = (props) => {
             </ul>
 
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item mb-3 mb-sm-3">
                 <Link
                   to="/#equipo"
                   id="nav-link3"
@@ -69,7 +68,7 @@ const Navbar = (props) => {
                 </Link>
               </li>
 
-              <li className="nav-item">
+              <li className="nav-item mb-3 mb-sm-3">
                 <Link
                   to="/#contacto"
                   id="nav-link4"
