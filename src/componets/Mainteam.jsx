@@ -5,7 +5,7 @@ import { Carousel } from 'primereact/carousel';
 //core
 import 'primereact/resources/primereact.min.css';
 
-import Lottie from "lottie-react";
+import Lottie from 'lottie-react';
 import * as animacion from './../lottie/montaña.json';
 
 import { Avatar } from 'primereact/avatar';
@@ -63,13 +63,29 @@ const Mainteam = () => {
       <div style={{ zIndex: 10 }}>
         <Lottie animationData={animacion} loop={true} autoPlay={true} />
       </div>
+      <h1
+        className="text-center titulo"
+        style={{
+          color: 'white',
+          backgroundColor: '#6ACC53',
+          marginBottom: 0,
+          marginTop: -5,
+          zIndex: 10,
+        }}
+      >
+        Nuestro equipo
+      </h1>
       <Carousel
         value={members}
         numVisible={3}
         numScroll={1}
         responsiveOptions={responsiveOptions}
         itemTemplate={membersTeam}
-        style={{ backgroundColor: '#6ACC53' }}
+        style={{
+          backgroundColor: '#6ACC53',
+          paddingTop: 75,
+          paddingBottom: 75
+        }}
         showIndicators={false}
         circular={true}
       />

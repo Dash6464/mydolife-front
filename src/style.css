@@ -52,7 +52,7 @@ body {
 }
 
 .info {
-  max-width: 647px;
+  max-width: 747px;
   margin-top: 33px;
   font-size: 24px;
   color: #a9afb9;
@@ -167,28 +167,24 @@ button[type='submit']:hover {
 }
 
 @media (max-width: 576px) {
-  #logo {
+  #title {
+    display: none;
+  }
+
+  #title2 {
+    margin-right: 25%;
+    margin-left: 50%;
+    transform: translate(-50%, -110%);
+  }
+
+  #title2 img {
     display: block;
     width: 284px;
     height: 64px;
   }
-  #title {
-    display: none;
-  }
-
-  #title2 {
-    margin-right: 25%;
-    margin-left: 50%;
-    transform: translate(-50%, -110%);
-  }
 }
 
 @media (min-width: 577px) and (max-width: 991px) {
-  #logo {
-    display: block;
-    width: 302px;
-    height: 73px;
-  }
   #title {
     display: none;
   }
@@ -198,26 +194,27 @@ button[type='submit']:hover {
     margin-left: 50%;
     transform: translate(-50%, -110%);
   }
+
+  #title2 img {
+    display: block;
+    width: 284px;
+    height: 64px;
+  }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 991px) {
   #title {
-    position: sticky;
-    top: 0px;
+    margin-top: -5px;
   }
-  #logo {
-    display: none;
-  }
-  #logo2 {
-    width: 302px;
-    height: 73px;
-  }
-}
 
-@media (min-width: 1140px) {
-  #logo2 {
-    width: 492px;
-    height: 112px;
+  #title img {
+    display: block;
+    width: 284px;
+    height: 64px;
+  }
+
+  #title2 {
+    display: none;
   }
 }
 
@@ -269,13 +266,13 @@ button[type='submit']:hover {
 }
 
 @media (min-width: 0) and (max-width: 991px) {
-  .link{
+  .link {
     padding: 0px;
   }
 }
 
-@media (min-width: 992px){
-  .link{
+@media (min-width: 992px) {
+  .link {
     padding: 5px 20px;
   }
 }

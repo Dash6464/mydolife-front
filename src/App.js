@@ -7,7 +7,7 @@ import 'primereact/resources/primereact.min.css';
 
 import './style.css';
 import Navbar from './componets/Navbar';
-import Title from './componets/Title';
+
 import Icon from './componets/Icon';
 import Aboutus from './componets/Aboutus';
 import Content from './componets/Content';
@@ -29,9 +29,7 @@ function App() {
       <div className="App">
         <Element name="#inicio"></Element>
         <Navbar handleEnlanceClick={handleEnlanceClick} />
-        <div id="title">
-          <Title />
-        </div>
+
         <Icon />
         <Element
           className="container d-flex flex justify-content-center"

@@ -3,10 +3,10 @@ import React from 'react'
 const Content = () => {
   return (
     <div className="row" style={{ marginTop: 100, zIndex: 10}}>
-      <div className="col-md-12 col-xl-6 text-center text-xl-start">
+      <div className="col-md-12 col-xl-5 text-center text-xl-start">
         <img src='./images/Kowie 1.png' alt="Kowie"/>
       </div>
-      <div className="col-md-12 col-xl-6 text-center text-xl-start" style={{
+      <div className="col-md-12 col-xl-7 text-center text-xl-start" style={{
         marginTop: 75,
       }}>
         <h1
