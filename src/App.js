@@ -11,7 +11,6 @@ import Title from './componets/Title';
 import Icon from './componets/Icon';
 import Aboutus from './componets/Aboutus';
 import Content from './componets/Content';
-import Mountain from './componets/Mountain';
 import Mainteam from './componets/Mainteam';
 import Contact from './componets/Contact';
 import { BrowserRouter } from 'react-router-dom';
@@ -53,10 +52,15 @@ function App() {
           <Content />
         </div>
         <Element name="#equipo">
-          <Mountain />
           <Mainteam />
         </Element>
-        <Element name="#contacto">
+        <Element
+          name="#contacto"
+          style={{
+            zIndex: 9,
+            borderColor: 'red'
+          }}
+        >
           <Contact />
         </Element>
       </div>

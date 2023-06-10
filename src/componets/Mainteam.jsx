@@ -5,6 +5,9 @@ import { Carousel } from 'primereact/carousel';
 //core
 import 'primereact/resources/primereact.min.css';
 
+import Lottie from "lottie-react";
+import * as animacion from './../lottie/montaña.json';
+
 import { Avatar } from 'primereact/avatar';
 
 const Mainteam = () => {
@@ -57,6 +60,9 @@ const Mainteam = () => {
 
   return (
     <div className="card">
+      <div style={{ zIndex: 10 }}>
+        <Lottie animationData={animacion} loop={true} autoPlay={true} />
+      </div>
       <Carousel
         value={members}
         numVisible={3}
